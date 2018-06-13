@@ -50,7 +50,7 @@ public class MLBParks {
         MongoDBConnection con = new MongoDBConnection();
         try {
             MongoDatabase db = con.connect();
-            Thread.sleep(5000);
+            Thread.sleep(10000);
             return con.getAll(db);
         }catch(Exception e){
             System.out.println("[ERROR] Connecting to database");
